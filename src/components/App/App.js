@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "numtiles": 36,
+      "numTiles": 36,
       "playing": false,
       "previousTileIndex": null,
       "tiles": [],
@@ -34,8 +34,8 @@ class App extends Component {
         <header className="App-header">
           Turbo-Matcher
         </header>
-        <OptionsPanel playing={this.state.playing} numtiles={this.state.numtiles} startGame={this.startGame} />
-        <Board numtiles={this.state.numtiles} tiles={this.state.tiles} />
+        <OptionsPanel playing={this.state.playing} numTiles={this.state.numTiles} startGame={this.startGame} />
+        <Board numTiles={this.state.numTiles} tiles={this.state.tiles} />
       </div>
     );
 
