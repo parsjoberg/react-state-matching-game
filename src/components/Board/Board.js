@@ -10,7 +10,7 @@ const Board = (props) => {
   }
 
   const tiles = props.tiles.map((tile) => {
-    return <Tile tile={{ ...tile }} />
+    return <Tile { ...tile } />
   })
 
   return (
